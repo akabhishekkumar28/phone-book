@@ -1,0 +1,8 @@
+<div
+  class="numbre-list d-flex"
+  *ngFor="let list of phoneList; let i = index"
+  (click)="showDetailHandler(i)"
+>
+  <h4 class="name">{{ list.name }}</h4>
+  <button class="delete-btn btn btn-danger" (click)="deleteHandler(list.id)"></button>
+</div>

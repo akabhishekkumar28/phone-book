@@ -1,0 +1,15 @@
+
+<h4>update info</h4>
+<form action="">
+  <input type="text" placeholder="name" name="name" [(ngModel)]="seriveData.formData.name" />
+  <input type="text" placeholder="phone" name="phone" [(ngModel)]="seriveData.formData.phone" />
+  <input type="email" placeholder="Email" name="email" [(ngModel)]="seriveData.formData.email" />
+  <input
+    type="text"
+    placeholder="Address"
+    name="address"
+    [(ngModel)]="seriveData.formData.address"
+  />
+  <input type="file" placeholder="Image" name="image" [(ngModel)]="seriveData.formData.image" />
+  <button class="btn btn-primary" (click)="updateHandler()">update</button>
+</form>
