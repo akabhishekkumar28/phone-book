@@ -21,16 +21,16 @@ export class UserDataService {
   };
 
   saveContactList() {
-    return this.http.post('http://localhost:5000/numberList', this.formData);
+    return this.http.post('http://localhost:3000/numberList', this.formData);
   }
 
   getRepos() {
-    return this.http.get('http://localhost:5000/numberList');
+    return this.http.get('http://localhost:3000/numberList');
   }
 
   deleteUser(id: number) {
     return this.http.delete(
-      `http://localhost:5000/numberList/${id}`,
+      `http://localhost:3000/numberList/${id}`,
       headersOpt
     );
   }
